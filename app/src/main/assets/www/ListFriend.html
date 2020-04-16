@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="css/semantic.min.js"></script>
+<script type="text/javascript" src="js/dbFriends.js"> </script>
+
+<link href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="css/my-theme.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+var d = new Date();
+var month = d.getMonth()+1;
+var day = d.getDate();
+var hours = d.getHours()
+var minutes = d.getMinutes()
+var datetime = ((''+day).length<2 ? '0' : '') + day + '.' + ((''+month).length<3 ? '0' : '') + month + '.' + d.getFullYear();
+
+	$('#datetime').text(datetime);
+});
+
+$(document).ready(function() {
+	$('.ui.dropdown').dropdown();	
+});
+
+</script>
+</head>
+
+<body >
+
+<header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+  <div class="mdc-top-app-bar__row">
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+      <a href="NewFriend.html"><button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">add</button></a>
+      <span class="mdc-top-app-bar__title">Freunde</span>
+    </section>
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+      <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Favorite">favorite</button>
+    </section>
+  </div>
+</header>
+<br>
+<br>
+
+<ul class="mdc-list mdc-list--two-line mdc-list--avatar-list">
+
+<li id="results"></li>
+
+</ul>
+
+</body>
+</html>

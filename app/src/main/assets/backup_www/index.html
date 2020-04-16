@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>jQuery Countdown</title>
+<link rel="stylesheet" style type="text/css" href="css/jquery.countdown.css">
+<style>
+
+@font-face {
+font-family: "Kalam-Regular";
+src: url("css/fonts/Kalam-Regular.ttf");
+}
+
+@font-face {
+font-family: "Kalam-Bold";
+src: url("css/fonts/Kalam-Bold.ttf");
+}
+
+body {
+  vertical-align: middle;
+  height: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  font-family: 'Kalam-Regular', Arial, sans-serif;
+}
+
+h1 {
+  color: dark-grey;
+  font-family: 'Kalam-Bold', Arial, sans-serif;
+  font-size: 16pt;
+  text-align:center;
+}
+
+p {
+  color: dark-grey;
+  font-family: 'Kalam-Regular', Arial, sans-serif;
+  font-size: 10pt;
+  text-align:center;
+}
+
+
+</style>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.plugin.min.js"></script>
+<script src="js/jquery.countdown.js"></script>
+<script src="js/jquery.countdown-de.js"></script>
+<script>
+$(function () {
+		var newYear = new Date(); 
+		newYear = new Date(2020, 6 - 1, 1); 
+		$('#defaultCountdown').countdown({until: newYear}); 
+});
+</script>
+</head>
+<body>
+<h1><b>COMING SOON...</b></br></h1>
+<p>LauraApp</br> 
+Release Date: 01. Juni 2020</br>
+<div id="defaultCountdown"></div></br>
+<img src="img/owlanimation.gif" width="80%">
+</p>
+</body>
+</html>

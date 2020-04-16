@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="css/semantic.min.js"></script>
+<script src="js/jSignature.min.js"></script>
+<script type="text/javascript" src="js/flashcanvas.js"></script>
+<script type="text/javascript" src="js/dbBet.js"> </script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+var d = new Date();
+var month = d.getMonth()+1;
+var day = d.getDate();
+var hours = d.getHours()
+var minutes = d.getMinutes()
+var datetime = ((''+day).length<2 ? '0' : '') + day + '.' + ((''+month).length<3 ? '0' : '') + month + '.' + d.getFullYear() + ' - ' + ((''+hours).length<2 ? '0' : '') + hours + ":" + ((''+minutes).length<2 ? '0' : '') + minutes;
+
+	$('#datetime').text(datetime);
+});
+
+
+$(document).ready(function() {
+	$('.ui.dropdown').dropdown();	
+});
+
+$(document).ready(function() {
+	$("#signaturePro").jSignature();
+});
+
+$(document).ready(function() {
+	$("#signatureCon").jSignature();
+});
+
+function resetSignaturePro() {
+	$("#signaturePro").jSignature("reset");
+};
+
+function resetSignatureCon() {
+	$("#signatureCon").jSignature("reset");
+};
+
+function betprofriendname() {
+    var profriendname = document.getElementById('bet-profriend').value;
+  	$('#betprofriendname').text(profriendname);
+};
+
+function betconfriendname() {
+    var confriendname = document.getElementById('bet-confriend').value;
+  	$('#betconfriendname').text(confriendname);
+};
+
+
+//  document.getElementById('bet-title');
+//	var $sigdiv = $("#signature");
+//	var inputSignature = $sigdiv.jSignature("getData", "svgbase64");
+//  JSON.stringify(inputSignature)
+
+</script>
+</head>
+
+<body >
+<div class="ui segment">
+    <div class="ui top right attached label"><label id="datetime"></label></div>
+    <h2>Neue Wette</h2>
+
+ <form class="ui form" type="get">
+
+      <div class="field">
+        <label>Titel</label>
+        <input type="text" id="bet-title" placeholder="Titel">
+      </div>
+      <div class="field">
+        <label>Behauptung</label>
+        <textarea rows="3" id="bet-description" placeholder="Behauptung"></textarea>
+      </div>
+    <div class="field">
+        <label>Wetteinsatz</label>
+        <textarea rows="3" id="bet-commitment" placeholder="Wetteinsatz"></textarea>
+    </div>
+
+      <a class="ui green label">Die Behauptung ist wahr:</a>
+     <div class="ui fluid selection dropdown">
+      <input type="hidden" id="bet-profriend" onchange="betprofriendname()">
+      <i class="dropdown icon"></i>
+      <div class="default text">Freund auswählen</div>
+      <div class="menu" id="showFriendsPro">
+      </div>
+       </div>
+
+      <div class="ui horizontal divider">
+        VS
+      </div>
+
+    <a class="ui red label">Die Behauptung ist falsch:</a>
+    <div class="ui fluid selection dropdown">
+      <input type="hidden" id="bet-confriend" onchange="betconfriendname()">
+      <i class="dropdown icon"></i>
+      <div class="default text">Freund auswählen</div>
+      <div class="menu" id="showFriendsCon">
+      </div>
+    </div>
+    <br>
+    </form>
+
+    <div class="ui placeholder segment">
+    <div class="ui small header">Unterschrift <label id="betprofriendname"></label></div>
+    <br>
+    <div id="signaturePro"></div>
+
+    <br>
+    <button class="ui button" onclick="resetSignaturePro()">
+      Zurücksetzen
+    </button>
+    </div>
+
+    <div class="ui placeholder segment">
+    <div class="ui small header">Unterschrift <label id="betconfriendname"></label></div>
+    <br>
+    <div id="signatureCon"></div>
+
+    <br>
+    <button class="ui button" onclick="resetSignatureCon()">
+      Zurücksetzen
+    </button>
+    </div>
+
+     <br>
+    <button id="submitButton" type="submit" class="ui primary button">
+      Speichern
+    </button>
+    <button id="cancelButton" class="ui button">
+      Abbrechen
+    </button>
+
+    
+    <br>
+</div>
+</body>
+</html> 

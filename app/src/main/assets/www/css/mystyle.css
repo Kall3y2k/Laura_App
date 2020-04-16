@@ -1,0 +1,27 @@
+
+@font-face {
+font-family: "Kalam-Regular";
+src: url("css/fonts/Kalam-Regular.ttf");
+}
+
+body {
+  vertical-align: middle;
+  height: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  font-family: 'Kalam-Regular', Arial, sans-serif;
+}
+
+h1 {
+  color: dark-grey;
+  font-family: 'Kalam-Regular', Arial, sans-serif;
+  font-size: 14pt;
+  text-align:center;
+}
+
+p {
+  color: dark-grey;
+  font-family: 'Kalam-Regular', Arial, sans-serif;
+  font-size: 10pt;
+  text-align:center;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="css/semantic.min.js"></script>
+<script src="js/jSignature.min.js"></script>
+<script type="text/javascript" src="js/flashcanvas.js"></script>
+<script type="text/javascript" src="js/dbFriends.js"> </script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+var d = new Date();
+var month = d.getMonth()+1;
+var day = d.getDate();
+var hours = d.getHours()
+var minutes = d.getMinutes()
+var datetime = ((''+day).length<2 ? '0' : '') + day + '.' + ((''+month).length<3 ? '0' : '') + month + '.' + d.getFullYear() + ' - ' + ((''+hours).length<2 ? '0' : '') + hours + ":" + ((''+minutes).length<2 ? '0' : '') + minutes;
+
+	$('#datetime').text(datetime);
+});
+
+$(document).ready(function() {
+	$('.ui.dropdown').dropdown();	
+});
+
+
+//  document.getElementById('bet-title');
+//	var $sigdiv = $("#signature");
+//	var inputSignature = $sigdiv.jSignature("getData", "svgbase64");
+//  JSON.stringify(inputSignature)
+
+</script>
+</head>
+
+<body >
+<div class="ui segment">
+    <div class="ui top right attached label"><label id="datetime"></label></div>
+    <h2>Neuer Freund/in</h2>
+
+    <form class="ui form" id="friend-form" name="friend-form"  type="post">
+
+      <div class="field">
+        <label>Name</label>
+        <input type="text" id="friend-name" placeholder="Name">
+      </div>
+
+    <label>Avatar</label>
+    <div class="ui fluid selection dropdown">
+      <input type="hidden" id="friend-avatar">
+      <i class="dropdown icon"></i>
+      <div class="default text">Select Friend</div>
+      <div class="menu">
+        <div class="item" data-value="data:image/png;base64,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">
+          <img class="ui mini avatar image" src="data:image/png;base64,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">
+          Avatar 1
+        </div>
+        <div class="item" data-value="img/Owl_2.png">
+          <img class="ui mini avatar image" src="img/Owl_2.png">
+          Avatar 2
+        </div>
+        <div class="item" data-value="img/Owl_3.png">
+          <img class="ui mini avatar image" src="img/Owl_3.png">
+          Avatar 3
+        </div>
+        <div class="item" data-value="img/Owl_4.png">
+          <img class="ui mini avatar image" src="img/Owl_4.png">
+          Avatar 4
+        </div>
+        <div class="item" data-value="img/Owl_5.png">
+          <img class="ui mini avatar image" src="img/Owl_5.png">
+          Avatar 5
+        </div>
+        <div class="item" data-value="img/Owl_6.png">
+          <img class="ui mini avatar image" src="img/Owl_6.png">
+          Avatar 6
+        </div>
+        <div class="item" data-value="img/Owl_7.png">
+          <img class="ui mini avatar image" src="img/Owl_7.png">
+          Avatar 7
+        </div>
+        <div class="item" data-value="img/Owl_8.png">
+          <img class="ui mini avatar image" src="img/Owl_8.png">
+          Avatar 8
+        </div>
+        <div class="item" data-value="img/Owl_9.png">
+          <img class="ui mini avatar image" src="img/Owl_9.png">
+          Avatar 9
+        </div>
+        <div class="item" data-value="img/Owl_10.png">
+          <img class="ui mini avatar image" src="img/Owl_10.png">
+          Avatar 10
+        </div>
+        <div class="item" data-value="img/Owl_11.png">
+          <img class="ui mini avatar image" src="img/Owl_11.png">
+          Avatar 11
+        </div>
+        <div class="item" data-value="img/Owl_12.png">
+          <img class="ui mini avatar image" src="img/Owl_12.png">
+          Avatar 12
+        </div>
+        <div class="item" data-value="img/Owl_13.png">
+          <img class="ui mini avatar image" src="img/Owl_13.png">
+          Avatar 13
+        </div>
+        <div class="item" data-value="img/Owl_14.png">
+          <img class="ui mini avatar image" src="img/Owl_14.png">
+          Avatar 14
+        </div>
+        <div class="item" data-value="img/Owl_15.png">
+          <img class="ui mini avatar image" src="img/Owl_15.png">
+          Avatar 15
+        </div>
+        <div class="item" data-value="img/Owl_16.png">
+          <img class="ui mini avatar image" src="img/Owl_16.png">
+          Avatar 16
+        </div>
+        <div class="item" data-value="img/Owl_17.png">
+          <img class="ui mini avatar image" src="img/Owl_17.png">
+          Avatar 17
+        </div>
+        <div class="item" data-value="img/Owl_18.png">
+          <img class="ui mini avatar image" src="img/Owl_18.png">
+          Avatar 18
+        </div>
+        <div class="item" data-value="img/Owl_19.png">
+          <img class="ui mini avatar image" src="img/Owl_19.png">
+          Avatar 19
+        </div>
+        <div class="item" data-value="img/Owl_20.png">
+          <img class="ui mini avatar image" src="img/Owl_20.png">
+          Avatar 20
+        </div>
+      </div>
+    </div>
+    <br>
+      <div class="field">
+        <label>Telefon</label>
+        <input type="text" id="friend-mobile" placeholder="Telefon (+49 172 1234567)">
+      </div>
+    </form>
+
+    <br>
+
+    <button id="submitButton" type="submit" class="ui primary button">
+      Speichern
+    </button>
+    <button id="cancelButton" class="ui button">
+      Abbrechen
+    </button>
+    <br>
+</div>
+</body>
+</html> 

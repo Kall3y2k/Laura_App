@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LauraApp</string>
+    <string name="title_home">Freunde</string>
+    <string name="title_dashboard">Wetten</string>
+    <string name="title_notifications">L-Stars</string>
+    <string name="title_Shield">Bier</string>
+</resources>

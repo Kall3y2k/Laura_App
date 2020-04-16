@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>jQuery Countdown</title>
+<link rel="stylesheet" style type="text/css" href="css/jquery.countdown.css">
+<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.plugin.min.js"></script>
+<script src="js/jquery.countdown.js"></script>
+<script src="js/jquery.countdown-de.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="css/semantic.min.js"></script>
+<script>
+$(function () {
+		var newYear = new Date(); 
+		newYear = new Date(2020, 6 - 1, 1); 
+		$('#defaultCountdown').countdown({until: newYear}); 
+});
+</script>
+</head>
+<body>
+<h1><b>COMING SOON...</b></br></h1>
+<p>LauraApp</br> 
+Release Date: 01. Juni 2020</br>
+<div id="defaultCountdown"></div></br>
+<img src="img/owlanimation.gif" width="80%">
+</p>
+</body>
+</html>

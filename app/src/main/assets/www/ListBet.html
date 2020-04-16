@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://files.codepedia.info/files/uploads/iScripts/html2canvas.js"></script>
+<script type="text/javascript" src="css/semantic.min.js"></script>
+<script type="text/javascript" src="js/jSignature.min.js"></script>
+<script type="text/javascript" src="js/flashcanvas.js"></script>
+<script type="text/javascript" src="js/dbBet.js"> </script>
+
+<link href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="css/my-theme.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+var d = new Date();
+var month = d.getMonth()+1;
+var day = d.getDate();
+var hours = d.getHours()
+var minutes = d.getMinutes()
+var datetime = ((''+day).length<2 ? '0' : '') + day + '.' + ((''+month).length<3 ? '0' : '') + month + '.' + d.getFullYear();
+
+	$('#datetime').text(datetime);
+});
+
+$(document).ready(function() {
+	$('.ui.dropdown').dropdown();	
+});
+
+$(document).ready(function() {
+	$("#signature").jSignature();
+});
+
+function resetSignature() {
+	$("#signature").jSignature("reset");
+};
+
+</script>
+</head>
+
+<body>
+<div id="topNavBar"></div>
+<br>
+<br>
+<div class="ui segment" id="mainsegement">
+	<div id="showBets"></div>
+	<div id="footerScript"></div>
+</div>
+
+</body>
+</html>

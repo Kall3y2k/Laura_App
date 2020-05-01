@@ -1,5 +1,4 @@
-{
-   "date": "05-01-2060",
-   "milliseconds_since_epoch": 1588344270337,
-   "time": "02:30:33 PM"
-}
+[
+{"date": "24.03.2020", "points": 120,  "type": "add",  "description": "BWL Lernen"},
+{"date": "19.05.2019", "points": -60,  "type": "rem",  "description": "Prüfung 2019"}
+]

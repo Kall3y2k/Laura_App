@@ -1,4 +1,5 @@
 [
+{"date": "02.05.2020", "points": -500,  "type": "red",  "description": "Korrekturbuchung"},
 {"date": "24.03.2020", "points": 120,  "type": "green",  "description": "BWL Lernen"},
 {"date": "19.05.2019", "points": -60,  "type": "red",  "description": "Prüfung 2019"},
 {"date": "24.03.2020", "points": 120,  "type": "green",  "description": "BWL Lernen"},

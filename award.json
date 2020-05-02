@@ -1,0 +1,8 @@
+[
+{"name": "Rückenmassage (20min)", "points": 20,  "description": "red",  "image": "Korrekturbuchung"},
+{"name": "Fußmassage (20min)", "points": 40,  "description": "red",  "image": "Korrekturbuchung"},
+{"name": "Restaurantbesuch", "points": 80,  "description": "red",  "image": "Korrekturbuchung"},
+{"name": "Restaurantbesuch *", "points": 140,  "description": "green",  "image": "BWL Lernen"},
+{"name": "Restaurantbesuch **", "points": 200,  "description": "red",  "image": "Prüfung 2019"},
+{"name": "Restaurantbesuch ***", "points": 300,  "description": "green",  "image": "BWL Lernen"}
+]

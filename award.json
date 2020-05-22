@@ -1,8 +1,8 @@
 [
-{"name": "Rückenmassage (20min)", "points": 20,  "description": "red",  "image": "Korrekturbuchung"},
-{"name": "Fußmassage (20min)", "points": 40,  "description": "red",  "image": "Korrekturbuchung"},
-{"name": "Restaurantbesuch", "points": 80,  "description": "red",  "image": "Korrekturbuchung"},
-{"name": "Restaurantbesuch *", "points": 140,  "description": "green",  "image": "BWL Lernen"},
-{"name": "Restaurantbesuch **", "points": 200,  "description": "red",  "image": "Prüfung 2019"},
-{"name": "Restaurantbesuch ***", "points": 300,  "description": "green",  "image": "BWL Lernen"}
+{"name": "Rückenmassage (20min)", "points": 20,  "description": "20 Minuten Rückenmasage mit Massageöl.",  "image": "https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/app/src/main/assets/www/img/award_1.png"},
+{"name": "Fußmassage (20min)", "points": 40,  "description": "20 Minuten Fußmassage mit Massageöl (10 Minuten pro Seite).",  "image": "https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/app/src/main/assets/www/img/award_1.png"},
+{"name": "Restaurantbesuch", "points": 80,  "description": "red",  "image": "https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/app/src/main/assets/www/img/award_1.png"},
+{"name": "Restaurantbesuch *", "points": 140,  "description": "green",  "image": "https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/app/src/main/assets/www/img/award_1.png"},
+{"name": "Restaurantbesuch **", "points": 200,  "description": "red",  "image": "https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/app/src/main/assets/www/img/award_1.png"},
+{"name": "Restaurantbesuch ***", "points": 300,  "description": "green",  "image": "https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/app/src/main/assets/www/img/award_1.png"}
 ]

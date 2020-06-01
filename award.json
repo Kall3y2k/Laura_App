@@ -1,8 +1,8 @@
 [
 {"name": "Rückenmassage (20min)", "points": 20,  "description": "20 Minuten Rückenmasage mit Massageöl.",  "image": "https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/app/src/main/assets/www/img/award_1.png"},
-{"name": "Fußmassage (20min)", "points": 40,  "description": "20 Minuten Fußmassage mit Massageöl (10 Minuten pro Seite).",  "image": "https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/app/src/main/assets/www/img/award_2.png"},
+{"name": "Fußmassage (20min)", "points": 20,  "description": "20 Minuten Fußmassage mit Massageöl (10 Minuten pro Seite).",  "image": "https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/app/src/main/assets/www/img/award_2.png"},
 {"name": "Frischer Trüffel", "points": 60,  "description": "Eine Portion frischer Trüffel.",  "image": "https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/app/src/main/assets/www/img/award_3.png"},
 {"name": "Restaurantbesuch", "points": 100,  "description": "Abendessen in einem Restaurant der Wahl.",  "image": "https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/app/src/main/assets/www/img/award_4.png"},
-{"name": "Restaurantbesuch *", "points": 200,  "description": "Abendessen in einem 1-Sterne Michelin Restaurant der Wahl.",  "image": "https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/app/src/main/assets/www/img/award_5.png"},
-{"name": "Restaurantbesuch **", "points": 300,  "description": "Abendessen in einem 2-Sterne Michelin Restaurant der Wahl.",  "image": "https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/app/src/main/assets/www/img/award_6.png"}
+{"name": "Restaurantbesuch *", "points": 250,  "description": "Abendessen in einem 1-Sterne Michelin Restaurant der Wahl.",  "image": "https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/app/src/main/assets/www/img/award_5.png"},
+{"name": "Restaurantbesuch **", "points": 400,  "description": "Abendessen in einem 2-Sterne Michelin Restaurant der Wahl.",  "image": "https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/app/src/main/assets/www/img/award_6.png"}
 ]

@@ -27,7 +27,7 @@
 {"item": "Brillenputztücher", "icon": "wash",  "drawer": "23"},
 {"item": "Strom", "icon": "flash_on",  "drawer": "32"},
 {"item": "Handyladekabel", "icon": "battery_charging_full",  "drawer": "17"},
-{"item": "Taschentücher", "icon": "corp_portrait",  "drawer": "33"},
+{"item": "Taschentücher", "icon": "crop_portrait",  "drawer": "33"},
 {"item": "Handschuhe", "icon": "pan_tool",  "drawer": "36"},
 {"item": "Regenschirme", "icon": "beach_access",  "drawer": "26"},
 {"item": "Mützen", "icon": "ac_unit",  "drawer": "38"},

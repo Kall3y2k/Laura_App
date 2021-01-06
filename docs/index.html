@@ -5,6 +5,8 @@
 
   <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
   <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/Kommoden-App/favicon.svg" sizes="any">
+  <link rel="apple-touch-icon" sizes="128x128" href="apple-touch-icon-120.png">
+  <link rel="mask-icon" href="favicon.svg">
 
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="css/semantic.min.js"></script>
@@ -23,6 +25,13 @@ ul li::before {
   margin-left: -1em;
 }
 </style>
+
+<script>
+
+
+
+</script>
+
 </head>
 <body>
 
@@ -31,7 +40,7 @@ ul li::before {
 <br>
 <br>
 
-<img class="ui centered medium image" src="https://github.com/Kall3y2k/Laura_App/raw/master/docs/Logo.png">
+<img class="ui centered medium image" src="logo.png">
 
 <div class="ui centered large icon input">
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Suchen..." title="Bitte Gegenstand eingeben">
@@ -46,7 +55,7 @@ ul li::before {
 
 <div class="ui container">
 
-<div class="ui divided selection list">
+<div class="ui divided selection list" id="List">
 
 <ul id="myUL">
   <li><h4><a href="#">Laura's Kram</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="ui horizontal label">Schublade 1</div></h4></li>

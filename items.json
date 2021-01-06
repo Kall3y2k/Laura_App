@@ -1,13 +1,13 @@
 [
+{"item": "Bastelkrams", "icon": "content_cut",  "drawer": "25"},
+{"item": "Briefumschläge", "icon": "email",  "drawer": "19"},
+{"item": "Briefmarken", "icon": "mark_email_unread",  "drawer": "19"},
+{"item": "Feuerzeuge", "icon": "local_fire_department",  "drawer": "2"},
+{"item": "Fusselroller", "icon": "cleaning_services",  "drawer": "22"},
+{"item": "Kalle's Kram", "icon": "account_balance_wallet",  "drawer": "11"},
+{"item": "Kleingeld", "icon": "local_fire_department",  "drawer": "3"},
 {"item": "Feuerzeuge", "icon": "local_fire_department",  "drawer": 23},
 {"item": "Feuerzeuge", "icon": "local_fire_department",  "drawer": 23},
 {"item": "Feuerzeuge", "icon": "local_fire_department",  "drawer": 23},
-{"item": "Feuerzeuge", "icon": "local_fire_department",  "drawer": 23},
-{"item": "Feuerzeuge", "icon": "local_fire_department",  "drawer": 23},
-{"item": "Feuerzeuge", "icon": "local_fire_department",  "drawer": 23},
-{"item": "Feuerzeuge", "icon": "local_fire_department",  "drawer": 23},
-{"item": "Feuerzeuge", "icon": "local_fire_department",  "drawer": 23},
-{"item": "Feuerzeuge", "icon": "local_fire_department",  "drawer": 23},
-{"item": "Feuerzeuge", "icon": "local_fire_department",  "drawer": 23},
-{"item": "Feuerzeuge", "icon": "local_fire_department",  "drawer": 23}
+{"item": "Laura's Kram", "icon": "account_balance_wallet",  "drawer": "1"}
 ]

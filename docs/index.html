@@ -7,76 +7,119 @@
   <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/Kommoden-App/favicon.svg" sizes="any">
   <link rel="apple-touch-icon" sizes="128x128" href="apple-touch-icon.png">
   <link rel="mask-icon" href="favicon.svg">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
 
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="css/semantic.min.js"></script>
-
-<style>
-ul {
-  list-style: none;
-}
-
-ul li::before {
-  content: "\2022";
-  color: white;
-  font-weight: bold;
-  display: inline-block; 
-  width: 1em;
-  margin-left: -1em;
-}
-</style>
+  <script src="https://kit.fontawesome.com/796374778d.js" crossorigin="anonymous"></script>
 
 <script>
+function start() {
+    document.getElementById("searchList").style.display = "none";
+}
+window.onload = start;
 
+function search() {
+	document.getElementById("myInput").value = "";
+    document.getElementById("searchStart").style.display = "none";
+	document.getElementById("searchList").style.display = "";
+	document.getElementById("myInput").focus();
+	myFunction();
+}
 
+function back() {
+    document.getElementById("searchStart").style.display = "";
+	document.getElementById("searchList").style.display = "none";
+}
 
 </script>
 
 </head>
 <body>
 
-<div class="ui center aligned container">
+<div class="ui center aligned container" id="searchStart">
 <br>
 <br>
 <br>
 
-<img class="ui centered medium image" src="Logo.png">
+<img class="ui centered medium image" src="logo.png">
 
-<div class="ui centered large icon input">
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Suchen..." title="Bitte Gegenstand eingeben">
+<div class="ui centered large left icon input">
+		<i class="search icon"></i>
+		<input type="text" id="start" onclick="search()" placeholder="" style="border-radius: 20px;">
 </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
 </div>
 
-<div class="ui container">
+<div class="ui container" id="searchList" style="margin-top: 12px;">
 
-<div class="ui divided selection list" id="List">
 
-<ul id="myUL">
-  <li><h4><a href="#">Laura's Kram</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="ui horizontal label">Schublade 1</div></h4></li>
-  <li><h4><a href="#">Feuerzeuge</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="ui horizontal label">Schublade 2</div></h4></li>
-  <li><h4><a href="#">Zigaretten</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="ui horizontal label">Schublade 2</div></h4></li>
-  <li><h4><a href="#">Schuhpflege</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="ui horizontal label">Schublade 9</div></h4></li>
-  <li><h4><a href="#">Kalle's Kram</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="ui horizontal label">Schublade 11</div></h4></li>
-  <li><h4><a href="#">Kellerschlüssel</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="ui horizontal label">Schublade 11</div></h4></li>
+<i class="material-icons-outlined" style="font-size: 18px; color: #4285F4;" onclick="back()">arrow_back</i><b style="margin-left: 12px;"><div class="ui transparent input"><input type="text" id="myInput" onkeyup="myFunction()" placeholder="" title="Bitte Gegenstand eingeben"></div></b>
+<div class="ui divider"></div>
 
-</ul>
+<div class="ui middle aligned list" id="myUL">
+
+  <div class="item">
+    <div class="right floated content">
+      <div class="ui label">23</div>
+    </div>
+    <div class="content">
+	<i class="material-icons-outlined" style="font-size: 14px; color: grey; vertical-align:baseline;">local_fire_department</i><b style="margin-left: 16px;">Feuerzeuge</b>
+    </div>
+  </div>
+  <div class="item">
+    <div class="right floated content">
+      <div class="ui label">13</div>
+    </div>
+    <div class="content">
+	<i class="material-icons-outlined" style="font-size: 14px; color: grey;">smoking_rooms</i><b style="margin-left: 16px;">Zigaretten</b>
+    </div>
+  </div>
+  <div class="item">
+    <div class="right floated content">
+      <div class="ui label">01</div>
+    </div>
+    <div class="content">
+	<i class="material-icons-outlined" style="font-size: 18px; color: grey;">work</i><b style="margin-left: 12px;">Laura's Kram</b>
+    </div>
+  </div>
+  <div class="item">
+    <div class="right floated content">
+      <div class="ui label">09</div>
+    </div>
+    <div class="content">
+	<i class="material-icons-outlined" style="font-size: 18px; color: grey;">vpn_key</i><b style="margin-left: 12px;">Kellerschlüssel</b>
+    </div>
+  </div>
+  <div class="item">
+    <div class="right floated content">
+      <div class="ui label">31</div>
+    </div>
+    <div class="content">
+	<i class="material-icons-outlined" style="font-size: 18px; color: grey;">umbrella</i><b style="margin-left: 12px;">Schuhpflege</b>
+    </div>
+  </div>
 </div>
+</div>
+</div>
+
 <script>
+
 function myFunction() {
     var input, filter, ul, li, a, i, txtValue;
+	
     input = document.getElementById("myInput");
+	
     filter = input.value.toUpperCase();
+	
     ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
+	
+    li = ul.getElementsByClassName("item");
+	
     for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
+        a = li[i].getElementsByClassName('content')[1].childNodes[2];
         txtValue = a.textContent || a.innerText;
+
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
             li[i].style.display = "";
         } else {
@@ -85,9 +128,7 @@ function myFunction() {
     }
 }
 
-
 </script>
-</div>
 
 </body>
 </html>

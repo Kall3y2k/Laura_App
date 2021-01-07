@@ -11,7 +11,6 @@
 
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="css/semantic.min.js"></script>
-  <script src="https://kit.fontawesome.com/796374778d.js" crossorigin="anonymous"></script>
 
 <script>
 
@@ -31,6 +30,7 @@ $.getJSON(dataUrl, function(data) {
 });
 
 document.getElementById("searchList").style.display = "none";
+$('.ui.rating').rating();
 
 });
 
@@ -66,10 +66,129 @@ function back() {
 		<input type="text" id="start" onclick="search()" placeholder="" style="border-radius: 20px;">
 </div>
 
+<div class="ui card">
+  <div class="image">
+    <img class="ui medium centered image" style="width: auto; height: 400px;" src="https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/docs/gin-pictures/bathtub.png">
+  </div>
+  <div class="content">
+    <a class="header">Bathtub Gin</a>
+    <div class="meta">
+      <span class="date"><i class="gb uk flag"></i> England <i class="search icon"></i> Dry Gin <i class="bolt icon"></i> 43,3% Vol.</span>
+    </div>
+    <div class="description">
+      <i class="eye icon"></i> Koriander, Nelken, Orange, Wacholder, Zimt
+    </div>
+  </div>
+  <div class="extra content">
+      Bewertung:
+      <div class="ui star rating" data-rating="3" data-max-rating="5"></div>
+    </div>
+  </div>
+
+<div class="ui card">
+  <div class="image">
+    <img class="ui medium centered image" style="width: auto; height: 400px;" src="https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/docs/gin-pictures/bulldog.png">
+  </div>
+  <div class="content">
+    <a class="header">Bulldog</a>
+    <div class="meta">
+      <span class="date"><i class="gb uk flag"></i> England <i class="search icon"></i> Dry Gin <i class="bolt icon"></i> 40,0% Vol.</span>
+    </div>
+    <div class="description">
+      <i class="eye icon"></i> Wacholder, Dragon Eye (Lychee), Koriander, Iriswurzeln, Angelikawurzeln, Süßholz, Zitronenschalen, Mohn, Lotusblätter, Mandel, Cassia Rinde Lavendel
+    </div>
+  </div>
+  <div class="extra content">
+      Bewertung:
+      <div class="ui star rating" data-rating="3" data-max-rating="5"></div>
+    </div>
+  </div>
+
+<div class="ui card">
+  <div class="image">
+    <img class="ui medium centered image" style="width: auto; height: 400px;" src="https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/docs/gin-pictures/gin_mare.png">
+  </div>
+  <div class="content">
+    <a class="header">Gin Mare</a>
+    <div class="meta">
+      <span class="date"><i class="es flag"></i> Spanien (Barcelona) <i class="search icon"></i> Dry Gin <i class="bolt icon"></i> 42,7% Vol.</span>
+    </div>
+    <div class="description">
+      <i class="eye icon"></i> Oliven, Basilikum, Rosmarin, Thymian
+    </div>
+  </div>
+  <div class="extra content">
+      Bewertung:
+      <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+    </div>
+  </div>
+
+<div class="ui divided items">
+  <div class="item">
+    <div class="image">
+      <img src="https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/docs/gin-pictures/2cv.png">
+    </div>
+  </div>
+  <div class="item">
+    <div class="image">
+      <img src="https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/docs/gin-pictures/bathtub.png">
+    </div>
+  </div>
+  <div class="item">
+    <div class="image">
+      <img src="https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/docs/gin-pictures/black_tomato.png">
+    </div>
+  </div>
+    <div class="item">
+    <div class="image">
+      <img src="https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/docs/gin-pictures/blue_gin.png">
+    </div>
+  </div>
+  <div class="item">
+    <div class="image">
+      <img src="https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/docs/gin-pictures/bombay_bramble.png">
+    </div>
+  </div>
+  <div class="item">
+    <div class="image">
+      <img src="https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/docs/gin-pictures/bombay_sapphire.png">
+    </div>
+  </div>
+    <div class="item">
+    <div class="image">
+      <img src="https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/docs/gin-pictures/brockmans.png">
+    </div>
+  </div>
+  <div class="item">
+    <div class="image">
+      <img src="https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/docs/gin-pictures/bathtub.png">
+    </div>
+  </div>
+  <div class="item">
+    <div class="image">
+      <img src="https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/docs/gin-pictures/black_tomato.png">
+    </div>
+  </div>
+    <div class="item">
+    <div class="image">
+      <img src="https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/docs/gin-pictures/2cv.png">
+    </div>
+  </div>
+  <div class="item">
+    <div class="image">
+      <img src="https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/docs/gin-pictures/bathtub.png">
+    </div>
+  </div>
+  <div class="item">
+    <div class="image">
+      <img src="https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/docs/gin-pictures/black_tomato.png">
+    </div>
+  </div>
+</div>
+
 </div>
 
 <div class="ui container" id="searchList" style="margin-top: 12px;">
-
 
 <i class="material-icons-outlined" style="color: #4285F4;" onclick="back()">arrow_back</i><b style="font-size: 18px; margin-left: 16px;"><div class="ui transparent input"><input type="text" id="myInput" onkeyup="myFunction()" placeholder=""></div></b>
 <div class="ui divider"></div>

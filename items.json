@@ -12,6 +12,7 @@
 {"item": "Laura's Kram", "icon": "account_balance_wallet",  "drawer": "1"},
 {"item": "Wein-Tragetasche", "icon": "shopping_bag",  "drawer": "27"},
 {"item": "Zollstock", "icon": "straighten",  "drawer": "13"},
+{"item": "Geo-Dreieck", "icon": "straighten",  "drawer": "13"},
 {"item": "Teppichmesser", "icon": "carpenter",  "drawer": "13"},
 {"item": "Quittungen", "icon": "receipt",  "drawer": "31"},
 {"item": "Rechnungen", "icon": "receipt",  "drawer": "31"},

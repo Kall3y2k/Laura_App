@@ -92,8 +92,6 @@ function myFunction() {
         a = li[i].getElementsByClassName('content')[0].childNodes[1];
         txtValue = a.textContent || a.innerText;
 
-		console.log(txtValue);
-
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
             li[i].style.display = "";
         } else {

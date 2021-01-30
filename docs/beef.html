@@ -22,10 +22,10 @@ var dataUrl = 'https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/beef.
 
 $.getJSON(dataUrl, function(data) {
     $.each(data, function(i){
-        html += '<div class="item"><div class="middle aligned content"><i class="material-icons-outlined" style="color: grey; font-size: 8px;">navigate_next</i><b style="font-size: 12px;">' + data[i].name + '</b></div></div>';
+        html += '<div class="item"><div class="right floated content"><img class="ui avatar image" src="./beef-icons/' + data[i].caticon + '.png"></div><i class="small ' + data[i].doticon1 + ' circle icon"></i><i class="small ' + data[i].doticon2 + ' circle icon"></i><i class="small ' + data[i].doticon3 + ' circle icon"></i><div class="content" style="font-size: 12px;"><a class="header">' + data[i].name + '</a><div class="description">'  + data[i].edition + ' | # '  + data[i].no + ' | Page: '  + data[i].page + '</br>'  + data[i].subcat + '</div></div></div>';
         });
 
-    $('.ui.middle.aligned.list').append(html);
+    $('.ui.relaxed.divided.list').append(html);
 
 });
 
@@ -69,8 +69,10 @@ function back() {
 
 <i class="material-icons-outlined" style="color: #4285F4;" onclick="back()">arrow_back</i><b style="font-size: 18px; margin-left: 16px;"><div class="ui transparent input"><input type="text" id="myInput" onkeyup="myFunction()" placeholder=""></div></b>
 <div class="ui divider"></div>
+<i class="small yellow circle icon"></i>Steak  <i class="small orange circle icon"></i>Grillen  <i class="small green circle icon"></i>Wursten  <i class="small blue circle icon"></i>Räuchern
+<div class="ui divider"></div>
 
-<div class="ui middle aligned list" id="myUL"></div>
+<div class="ui relaxed divided list" id="myUL"></div>
 
 </div>
 
@@ -89,7 +91,7 @@ function myFunction() {
     li = ul.getElementsByClassName("item");
 	
     for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByClassName('content')[0].childNodes[1];
+        a = li[i].getElementsByClassName('content')[1].childNodes[0];
         txtValue = a.textContent || a.innerText;
 
         if (txtValue.toUpperCase().indexOf(filter) > -1) {

@@ -56,6 +56,12 @@ function back() {
 	document.getElementById("searchList").style.display = "none";
 	document.getElementById("start").value = "";
 }
+	
+function backcover() {
+    document.getElementById("searchStart").style.display = "";
+	document.getElementById("coverList").style.display = "none";
+	document.getElementById("start").value = "";
+}
 
 </script>
 
@@ -76,6 +82,7 @@ function back() {
 </div>
 
 <div class="ui container" id="coverList" style="margin-top: 12px;">
+<i class="material-icons-outlined" style="color: #4285F4;" onclick="backcover()">arrow_back</i>
 
 <h3>Issue 01/2009</h3><img class="ui medium bordered image" src="./beef-covers/01-2009.jpg"><br><br>
 <h3>Issue 01/2010</h3><img class="ui medium bordered image" src="./beef-covers/01-2010.jpg"><br><br>

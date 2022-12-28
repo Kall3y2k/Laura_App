@@ -1,0 +1,80 @@
+  <a class="item">
+    <div class="ui grey circular label">1</div>
+    Laura's Kram
+  </a>
+  <a class="item">
+    <div class="ui grey circular label">2</div>
+    Feuerzeuge
+  </a>
+    <a class="item">
+    <div class="ui grey circular label">9</div>
+    Schuhpflege
+  </a>
+  <a class="item">
+    <div class="ui grey circular label">11</div>
+    Kalle's Kram & Kellerschlüssel
+  </a>
+  <a class="item">
+    <div class="ui grey circular label">12</div>
+    Masken & Desinfektion
+  </a>
+    <a class="item">
+    <div class="ui grey circular label">13</div>
+    Kleingeld
+  </a>
+    <a class="item">
+    <div class="ui grey circular label">19</div>
+    Briefumschläge und -marken
+  </a>
+    <a class="item">
+    <div class="ui grey circular label">21</div>
+    Schreibzeug
+  </a>
+    <a class="item">
+    <div class="ui grey circular label">22</div>
+    Fusselroller
+  </a>
+    <a class="item">
+    <div class="ui grey circular label">23</div>
+    Sonnenbrillen und -zeug
+  </a>
+    <a class="item">
+    <div class="ui grey circular label">24</div>
+    (Trage-)Taschen
+  </a>
+    <a class="item">
+    <div class="ui grey circular label">25</div>
+    Bastelkrams
+  </a>
+    <a class="item">
+    <div class="ui grey circular label">26</div>
+    Regenschirme
+  </a>
+    <a class="item">
+    <div class="ui grey circular label">31</div>
+    Quittungen + Rechnungen
+  </a>
+    <a class="item">
+    <div class="ui grey circular label">32</div>
+    Strom & Handyladekabel
+  </a>
+    <a class="item">
+    <div class="ui grey circular label">33</div>
+    Taschentücher
+  </a>
+    <a class="item">
+    <div class="ui grey circular label">34</div>
+    Schrauben usw.
+  </a>
+      <a class="item">
+    <div class="ui grey circular label">35</div>
+    Robo Beschrankung (Magnetband)
+  </a>
+      <a class="item">
+    <div class="ui grey circular label">36</div>
+    Handschuhe
+  </a>
+      <a class="item">
+    <div class="ui grey circular label">38</div>
+    Mützen
+  </a>

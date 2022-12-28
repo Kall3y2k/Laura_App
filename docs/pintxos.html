@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
+
+  <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+  <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/Kommoden-App/favicon.svg" sizes="any">
+  <link rel="apple-touch-icon" sizes="128x128" href="apple-touch-icon-pintxos.png">
+  <link rel="mask-icon" href="favicon.svg">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="css/semantic.min.js"></script>
+
+<script>
+
+$(document).ready(function() {
+
+var html = '';
+var sum = 0;
+var dataUrl = 'https://raw.githubusercontent.com/Kall3y2k/Laura_App/master/items.json';
+
+$.getJSON(dataUrl, function(data) {
+    $.each(data, function(i){
+        html += '<div class="item"><div class="middle aligned right floated content"><div class="ui label">3<i class="star icon"></i> <i class="gb uk flag"></i></div></div><div class="middle aligned content"><i class="material-icons-outlined" style="color: grey;">navigate_next</i><b style="font-size: 18px; margin-left: 16px;">' + data[i].item + '</b></div></div>';
+        });
+
+    $('.ui.middle.aligned.list').append(html);
+
+});
+
+document.getElementById("searchList").style.display = "none";
+$('.ui.rating').rating();
+
+});
+
+function search() {
+	document.getElementById("myInput").value = "";
+    document.getElementById("searchStart").style.display = "none";
+	document.getElementById("searchList").style.display = "";
+	document.getElementById("myInput").focus();
+	document.getElementById("myInput").select();
+	myFunction();
+}
+
+function back() {
+    document.getElementById("searchStart").style.display = "";
+	document.getElementById("searchList").style.display = "none";
+	document.getElementById("start").value = "";
+}
+
+</script>
+
+</head>
+<body>
+
+<div class="ui center aligned container" id="searchStart">
+<br>
+<br>
+<br>
+
+<img class="ui centered medium image" src="C:\Users\KalsbachSebastian\OneDrive - TK Elevator\Dokumente\01 Private Stuff\02 Sebastian\Pintox-App\Pintox-App\pintxos_logo.png">
+<br>
+<br>
+<br>
+
+<div class="ui centered large left icon input">
+		<i class="search icon"></i>
+		<input type="text" id="start" onclick="search()" placeholder="" style="border-radius: 20px;">
+</div>
+
+<br>
+<br>
+<br>
+
+<div class="ui centered card">
+  <div class="image">
+    <img class="ui medium centered image" style="width: auto; height: auto;" src=".\gin-pictures\narru-1.jpg">
+  </div>
+  <div class="content">
+    <a class="header">Ravioli de rabo, foie y trufa negra</a><br>
+    <div class="meta">
+      <span class="date"><img class="ui small centered image" style="width: 120px; height: auto;" src=".\gin-pictures\narru-logo.png"> <br><br><i class="linkify icon"></i> narru.es/ <br><br><i class="map pin icon"></i> San Martin Kalea, 22, 20005 Donostia, Gipuzkoa, Spanien</span>
+    </div>
+    <div class="description">
+      <i class="info circle icon"></i>Ingredients: &#129370 &#128004 &#129375
+    </div>
+  </div>
+  <div class="extra content">
+	  &#128120 Laura: 
+      <div class="ui star rating" data-rating="3" data-max-rating="6"></div><br>-/-<br>
+      &#129332 Kalle: 
+      <div class="ui star rating" data-rating="5" data-max-rating="6"></div>
+    </div>
+  </div>
+<br>
+
+<div class="ui centered card">
+  <div class="image">
+    <img class="ui medium centered image" style="width: auto; height: auto;" src=".\gin-pictures\narru-2.jpg">
+  </div>
+  <div class="content">
+    <a class="header">Ensalada tomate</a><br>
+    <div class="meta">
+      <span class="date"><img class="ui small centered image" style="width: 120px; height: auto;" src=".\gin-pictures\narru-logo.png"> <br><br><i class="linkify icon"></i> narru.es/ <br><br><i class="map pin icon"></i> San Martin Kalea, 22, 20005 Donostia, Gipuzkoa, Spanien</span>
+    </div>
+    <div class="description">
+      <i class="info circle icon"></i>Ingredients: &#127813 &#127813 &#127813 &#127813 &#129477
+    </div>
+  </div>
+  <div class="extra content">
+	  &#128120 Laura: 
+      <div class="ui star rating" data-rating="4" data-max-rating="6"></div><br>-/-<br>
+      &#129332 Kalle: 
+      <div class="ui star rating" data-rating="4" data-max-rating="6"></div>
+    </div>
+  </div>
+<br>
+
+<div class="ui centered card">
+  <div class="image">
+    <img class="ui medium centered image" style="width: auto; height: auto;" src=".\gin-pictures\iturrioz-1.jpg">
+  </div>
+  <div class="content">
+    <a class="header">Churros de patata trufada</a><br>
+    <div class="meta">
+      <span class="date"><img class="ui small centered image" style="width: 200px; height: auto;" src=".\gin-pictures\bar-iturrioz.png"> <br><br><i class="linkify icon"></i> facebook.com/bariturrioz/ <br><br><i class="map pin icon"></i> San Martin Kalea, 30, 20005 Donostia, Gipuzkoa, Spanien</span>
+    </div>
+    <div class="description">
+      <i class="info circle icon"></i>Ingredients: &#129364 &#129364 &#129364 &#127812 &#129370
+    </div>
+  </div>
+  <div class="extra content">
+	  &#128120 Laura: 
+      <div class="ui star rating" data-rating="5" data-max-rating="6"></div><br>-<br>
+      &#129332 Kalle: 
+      <div class="ui star rating" data-rating="4" data-max-rating="6"></div>
+    </div>
+  </div>
+<br> 
+
+
+<div class="ui centered card">  <div class="image"> <img class="ui medium centered image" style="width: auto; height: auto;" src=".\gin-pictures\1.jpg">  </div>  <div class="content">    <a class="header">Percebe</a><br>     <div class="meta">      <span class="date"><img class="ui small centered image" style="width: 120px; height: auto;" src=".\gin-pictures\2.png"> <br><br><i class="linkify icon"></i> instagram.com/ganbara_/ <br><br><i class="map pin icon"></i> C. de San Jerónimo, 21, 20003 Donostia-San Sebastian, Gipuzkoa, Spanien</span>     </div>     <div class="description">      <i class="info circle icon"></i>Ingredients: &#129414 &#129414 &#129414 &#128026 &#128026    </div>   </div>  <div class="extra content">  &#128120 Laura:       <div class="ui star rating" data-rating="4" data-max-rating="6"></div><br>-/-<br>      &#129332 Kalle:       <div class="ui star rating" data-rating="5" data-max-rating="6"></div>    </div>  </div><br>
+<div class="ui centered card">  <div class="image"> <img class="ui medium centered image" style="width: auto; height: auto;" src=".\gin-pictures\3.jpg">  </div>  <div class="content">    <a class="header">Hongo a la plancha con yema de huevo</a><br>     <div class="meta">      <span class="date"><img class="ui small centered image" style="width: 120px; height: auto;" src=".\gin-pictures\2.png"> <br><br><i class="linkify icon"></i> instagram.com/ganbara_/ <br><br><i class="map pin icon"></i> C. de San Jerónimo, 21, 20003 Donostia-San Sebastian, Gipuzkoa, Spanien</span>     </div>     <div class="description">      <i class="info circle icon"></i>Ingredients: &#129370 &#129370 &#129370 &#127812 &#127812 &#129476    </div>   </div>  <div class="extra content">  &#128120 Laura:       <div class="ui star rating" data-rating="6" data-max-rating="6"></div><br>-/-<br>      &#129332 Kalle:       <div class="ui star rating" data-rating="6" data-max-rating="6"></div>    </div>  </div><br>
+<div class="ui centered card">  <div class="image"> <img class="ui medium centered image" style="width: auto; height: auto;" src=".\gin-pictures\4.jpg">  </div>  <div class="content">    <a class="header">Ensalada tomate</a><br>     <div class="meta">      <span class="date"><img class="ui small centered image" style="width: 120px; height: auto;" src=".\gin-pictures\2.png"> <br><br><i class="linkify icon"></i> instagram.com/ganbara_/ <br><br><i class="map pin icon"></i> C. de San Jerónimo, 21, 20003 Donostia-San Sebastian, Gipuzkoa, Spanien</span>     </div>     <div class="description">      <i class="info circle icon"></i>Ingredients: &#127813 &#127813 &#127813 &#127813 &#127813    </div>   </div>  <div class="extra content">  &#128120 Laura:       <div class="ui star rating" data-rating="5" data-max-rating="6"></div><br>-/-<br>      &#129332 Kalle:       <div class="ui star rating" data-rating="5" data-max-rating="6"></div>    </div>  </div><br>
+<div class="ui centered card">  <div class="image"> <img class="ui medium centered image" style="width: auto; height: auto;" src=".\gin-pictures\5.png">  </div>  <div class="content">    <a class="header">Tartaleta de txangurro</a><br>     <div class="meta">      <span class="date"><img class="ui small centered image" style="width: 120px; height: auto;" src=".\gin-pictures\2.png"> <br><br><i class="linkify icon"></i> instagram.com/ganbara_/ <br><br><i class="map pin icon"></i> C. de San Jerónimo, 21, 20003 Donostia-San Sebastian, Gipuzkoa, Spanien</span>     </div>     <div class="description">      <i class="info circle icon"></i>Ingredients:     </div>   </div>  <div class="extra content">  &#128120 Laura:       <div class="ui star rating" data-rating="" data-max-rating="6"></div><br>-/-<br>      &#129332 Kalle:       <div class="ui star rating" data-rating="" data-max-rating="6"></div>    </div>  </div><br>
+<div class="ui centered card">  <div class="image"> <img class="ui medium centered image" style="width: auto; height: auto;" src=".\gin-pictures\6.png">  </div>  <div class="content">    <a class="header">Gambas rebozadas</a><br>     <div class="meta">      <span class="date"><img class="ui small centered image" style="width: 120px; height: auto;" src=".\gin-pictures\2.png"> <br><br><i class="linkify icon"></i> instagram.com/ganbara_/ <br><br><i class="map pin icon"></i> C. de San Jerónimo, 21, 20003 Donostia-San Sebastian, Gipuzkoa, Spanien</span>     </div>     <div class="description">      <i class="info circle icon"></i>Ingredients:     </div>   </div>  <div class="extra content">  &#128120 Laura:       <div class="ui star rating" data-rating="" data-max-rating="6"></div><br>-/-<br>      &#129332 Kalle:       <div class="ui star rating" data-rating="" data-max-rating="6"></div>    </div>  </div><br>
+<div class="ui centered card">  <div class="image"> <img class="ui medium centered image" style="width: auto; height: auto;" src=".\gin-pictures\8.png">  </div>  <div class="content">    <a class="header">Piquillo Parrillero</a><br>     <div class="meta">      <span class="date"><img class="ui small centered image" style="width: 120px; height: auto;" src=".\gin-pictures\10.png"> <br><br><i class="linkify icon"></i> xarmacook.com/ <br><br><i class="map pin icon"></i> Miguel Imaz K., 1, 20009 Donostia, Gipuzkoa, Spanien</span>     </div>     <div class="description">      <i class="info circle icon"></i>Ingredients:     </div>   </div>  <div class="extra content">  &#128120 Laura:       <div class="ui star rating" data-rating="" data-max-rating="6"></div><br>-/-<br>      &#129332 Kalle:       <div class="ui star rating" data-rating="" data-max-rating="6"></div>    </div>  </div><br>
+<div class="ui centered card">  <div class="image"> <img class="ui medium centered image" style="width: auto; height: auto;" src=".\gin-pictures\7.png">  </div>  <div class="content">    <a class="header">Platillo</a><br>     <div class="meta">      <span class="date"><img class="ui small centered image" style="width: 120px; height: auto;" src=".\gin-pictures\9.png"> <br><br><i class="linkify icon"></i> facebook.com/BarCiabogaSS/ <br><br><i class="map pin icon"></i> Easo Kalea, 9, 20006 Donostia, Gipuzkoa, Spanien</span>     </div>     <div class="description">      <i class="info circle icon"></i>Ingredients:     </div>   </div>  <div class="extra content">  &#128120 Laura:       <div class="ui star rating" data-rating="" data-max-rating="6"></div><br>-/-<br>      &#129332 Kalle:       <div class="ui star rating" data-rating="" data-max-rating="6"></div>    </div>  </div><br>
+
+
+<br>
+<br>
+<br>
+
+</div>
+
+<div class="ui container" id="searchList" style="margin-top: 12px;">
+
+<i class="material-icons-outlined" style="color: #4285F4;" onclick="back()">arrow_back</i><b style="font-size: 18px; margin-left: 16px;"><div class="ui transparent input"><input type="text" id="myInput" onkeyup="myFunction()" placeholder=""></div></b>
+<div class="ui divider"></div>
+
+<div class="ui middle aligned list" id="myUL"></div>
+
+</div>
+
+<script>
+
+function myFunction() {
+
+    var input, filter, ul, li, a, i, txtValue;
+	
+    input = document.getElementById("myInput");
+	
+    filter = input.value.toUpperCase();
+	
+    ul = document.getElementById("myUL");
+	
+    li = ul.getElementsByClassName("item");
+	
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByClassName('content')[1].childNodes[1];
+        txtValue = a.textContent || a.innerText;
+
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+
+</script>
+
+</body>
+</html>
